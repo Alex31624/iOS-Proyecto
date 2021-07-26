@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Proyecto" customModuleProvider="target">
+            <connections>
+                <outlet property="lblUser" destination="Mfj-7D-6DZ" id="Dat-Ak-wau"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1BN-SP-B5X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQg-Se-KbU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuB-T1-fbF">
+                            <rect key="frame" x="10" y="50" width="89" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-ZY-Sgi">
+                            <rect key="frame" x="294" y="50" width="110" height="40"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AR7-hs-bof"/>
+                                <constraint firstAttribute="width" constant="110" id="iga-Q1-Grx"/>
+                            </constraints>
+                            <state key="normal" title="Cerrar Sesión">
+                                <color key="titleColor" systemColor="systemBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="clickBtnCerrar:" destination="-1" eventType="touchUpInside" id="oJc-ly-JUN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="we2-Eq-UgX">
+                            <rect key="frame" x="204" y="50" width="60" height="40"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Pap-CY-aLW"/>
+                                <constraint firstAttribute="width" constant="60" id="X9O-Gi-Jhl"/>
+                            </constraints>
+                            <state key="normal" title="Editar">
+                                <color key="titleColor" systemColor="systemBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="clickBtnEditar:" destination="-1" eventType="touchUpInside" id="1iY-DH-cJe"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfj-7D-6DZ">
+                            <rect key="frame" x="10" y="80" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="4t1-IS-u4Z"/>
+                        <constraint firstAttribute="trailing" secondItem="4RV-ZY-Sgi" secondAttribute="trailing" constant="10" id="CW0-TV-Lmi"/>
+                        <constraint firstItem="4RV-ZY-Sgi" firstAttribute="leading" secondItem="we2-Eq-UgX" secondAttribute="trailing" constant="30" id="DZA-hM-RJL"/>
+                        <constraint firstItem="FuB-T1-fbF" firstAttribute="top" secondItem="OQg-Se-KbU" secondAttribute="top" constant="50" id="Gq1-bW-lQZ"/>
+                        <constraint firstItem="Mfj-7D-6DZ" firstAttribute="leading" secondItem="OQg-Se-KbU" secondAttribute="leading" constant="10" id="hqi-At-Yum"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="nCz-hm-hL8"/>
+                        <constraint firstItem="we2-Eq-UgX" firstAttribute="top" secondItem="OQg-Se-KbU" secondAttribute="top" constant="50" id="s0f-SU-wbw"/>
+                        <constraint firstItem="Mfj-7D-6DZ" firstAttribute="top" secondItem="FuB-T1-fbF" secondAttribute="bottom" constant="9" id="skE-ao-PlB"/>
+                        <constraint firstItem="FuB-T1-fbF" firstAttribute="leading" secondItem="OQg-Se-KbU" secondAttribute="leading" constant="10" id="vgl-i5-9Iv"/>
+                        <constraint firstItem="4RV-ZY-Sgi" firstAttribute="top" secondItem="OQg-Se-KbU" secondAttribute="top" constant="50" id="zXI-Yu-RAS"/>
+                    </constraints>
+                </view>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="o7s-ya-ao6">
+                    <rect key="frame" x="0.0" y="145" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-bG-NjY">
+                    <rect key="frame" x="20" y="220" width="143" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                    <state key="normal" title="Agregar Producto"/>
+                    <connections>
+                        <action selector="clickBtnProducto:" destination="-1" eventType="touchUpInside" id="en8-7H-DgX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OQg-Se-KbU" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0y2-kp-Glo"/>
+                <constraint firstItem="o7s-ya-ao6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wda-RK-gYP"/>
+                <constraint firstItem="o7s-ya-ao6" firstAttribute="top" secondItem="OQg-Se-KbU" secondAttribute="bottom" constant="25" id="XCk-Wy-EeU"/>
+                <constraint firstItem="o7s-ya-ao6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bUl-50-LYZ"/>
+                <constraint firstItem="OQg-Se-KbU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eqO-4w-Z1f"/>
+                <constraint firstItem="OQg-Se-KbU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kiN-2S-so3"/>
+            </constraints>
+            <point key="canvasLocation" x="-181.15942028985509" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
